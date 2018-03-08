@@ -13,7 +13,7 @@ class CreateGoalVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var goalTextView: UITextView!
     @IBOutlet weak var shortTermBtn: UIButton!
     @IBOutlet weak var LongTermBtn: UIButton!
-    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var nextBtn: KeyboardAdjustableButton!
     
     var goalType: GoalType = .shortTerm
     
