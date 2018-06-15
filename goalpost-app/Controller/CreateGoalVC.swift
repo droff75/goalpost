@@ -19,10 +19,12 @@ class CreateGoalVC: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextBtn.bindToKeyboard()
         shortTermBtn.setSelectedColor()
         LongTermBtn.setDeselectedColor()
         goalTextView.delegate = self
+        
+        self.view.layoutIfNeeded()
+        nextBtn.bindToKeyboard()
     }
 
     @IBAction func nextBtnWasPressed(_ sender: Any) {
